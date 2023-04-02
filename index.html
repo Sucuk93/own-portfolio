@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <title>Sergio | Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="max-w-2xl relative mx-auto">
+        <!-- Nav Container -->
+        <div class="flex items-center justify-between my-8 px-8">
+          <!-- Logo -->
+          <div class="uppercase font-semibold text-lg tracking-widest">
+            Sergio Laubner
+          </div>
+          <!-- Menu Items -->
+          <div class="hidden space-x-10 sm:block">
+            <a href="#portfolio" class="tracking-widest hover:text-softBlue"
+              >Portfolio</a
+            >
+            <a href="#contact" class="tracking-widest hover:text-softBlue"
+              >Kontakt</a
+            >
+          </div>
+          <!-- Hamburger Button -->
+
+          <button
+            id="menu-btn"
+            class="z-30 flex mt-2 sm:hidden focus:outline-none hamburger"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <!-- sm:px-16 md:p-32 -->
+        <div
+          id="menu"
+          class="fixed hidden inset-0 z-20 py-1 pt-24 pb-4 text-xl uppercase"
+        >
+          <div
+            class="flex-col items-center self-end w-full h-screen px-6 bg-bgDark"
+          >
+            <div class="w-full py-3 text-center">
+              <a
+                href="#portfolio"
+                class="menu-link tracking-widest hover:text-softBlue"
+                >Portfolio</a
+              >
+            </div>
+            <div class="w-full py-3 text-center">
+              <a
+                href="#contact"
+                class="menu-link tracking-widest hover:text-softBlue"
+                >Kontakt</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="intro" class="mt-16">
+        <div class="max-w-2xl mx-auto px-10">
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12"
+          >
+            <!-- Profil Image -->
+            <div class="min-w-max">
+              <img
+                src="images/profil-small.JPG"
+                alt=""
+                class="rounded-full border-borderBlue border-2 w-36 h-36"
+              />
+            </div>
+            <!-- Introduction -->
+            <div class="flex flex-col gap-4">
+              <div>
+                <h1
+                  class="text-3xl font-medium leading-normal md:leading-relaxed md:text-2xl"
+                >
+                  <div
+                    class="text-white border-r-2 border-grayishBlue w-max whitespace-nowrap overflow-hidden animate-typing"
+                  >
+                    Hallo, ich bin Sergio.
+                  </div>
+                  In meiner Freizeit programmiere ich leidenschaftlich gerne.
+                </h1>
+              </div>
+              <!-- Social Media -->
+              <div class="flex flex-row gap-4">
+                <!-- Instagram -->
+                <div>
+                  <a
+                    href="https://www.instagram.com/sergio_lbn/"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="20"
+                      class="fill-grayishBlue hover:fill-[url(#a)]"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="a"
+                          x1="0%"
+                          x2="50%"
+                          y1="100%"
+                          y2="0%"
+                        >
+                          <stop offset="0%" stop-color="#FFC593" />
+                          <stop offset="51.945%" stop-color="#BC7198" />
+                          <stop offset="100%" stop-color="#5A77FF" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        fill=""
+                        d="M143.32 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802c-2.716 0-3.056.012-4.123.06-3.631.167-5.65 2.182-5.816 5.817-.05 1.067-.061 1.407-.061 4.123s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122c-.163-3.629-2.18-5.65-5.816-5.817C146.377.01 146.036 0 143.32 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"
+                        transform="translate(-133)"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <!-- Twitter -->
+                <a href="#" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    class="fill-grayishBlue hover:fill-[url(#b)]"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="b"
+                        x1="100%"
+                        x2="0%"
+                        y1="16.979%"
+                        y2="83.021%"
+                      >
+                        <stop offset="0%" stop-color="#65FFEB" />
+                        <stop offset="100%" stop-color="#27718A" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      fill=""
+                      d="M86.66 3.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.805-2.27 8.22 8.22 0 01-2.606.996 4.096 4.096 0 00-2.995-1.296c-2.65 0-4.596 2.472-3.998 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478 4.086 4.086 0 01-1.858-.513c-.045 1.901 1.318 3.68 3.291 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.833 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"
+                      transform="translate(-66 -1)"
+                    />
+                  </svg>
+                </a>
+                <!-- Github -->
+                <a href="https://github.com/Sucuk93" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-grayishBlue hover:fill-[url(#c)]"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="c"
+                        x1="0%"
+                        x2="100%"
+                        y1="100%"
+                        y2="0%"
+                      >
+                        <stop offset="0%" stop-color="#D3205A" />
+                        <stop offset="100%" stop-color="#FF5A5A" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section id="portfolio" class="mt-24">
+        <div class="max-w-2xl lg:max-w-3xl mx-auto px-10">
+          <h2
+            class="text-lg text-white font-medium uppercase tracking-widest mb-12"
+          >
+            Portfolio
+          </h2>
+          <div class="grid grid-cols-1 gap-10 md:gap-6 md:grid-cols-2">
+            <!-- Photosnap -->
+            <div class="w-full flex flex-col gap-2">
+              <!-- Image -->
+              <div class="group relative">
+                <img src="images/preview-photosnap.jpg" alt="" />
+                <a
+                  href="/photosnap/index.html"
+                  class="absolute w-full h-full bg-bgDark bottom-0 left-0 inline-flex items-center gap-2 transition-opacity group-hover:opacity-70 opacity-20"
+                >
+                </a>
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity group-hover:opacity-100 opacity-0"
+                >
+                  <a
+                    href="/photosnap/index.html"
+                    class="inline-flex items-center space-x-2 border-b-4 md:border-b-2 border-white"
+                  >
+                    <span class="text-white uppercase font-medium text-xl"
+                      >Live Demo</span
+                    >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="mt-0.5 h-6 w-6 stroke-white hidden"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Name and Tags -->
+              <div class="flex flex-col gap-1">
+                <h3 class="text-white text-lg font-normal">Photosnap</h3>
+                <div class="flex gap-4">
+                  <span class="uppercase text-sm">Html</span>
+                  <span class="uppercase text-sm">Css</span>
+                  <span class="uppercase text-sm">JavaScript</span>
+                  <span class="uppercase text-sm">Tailwind</span>
+                </div>
+              </div>
+            </div>
+            <!-- Bookmark -->
+            <div class="w-full flex flex-col gap-2">
+              <!-- Image -->
+              <div class="group relative">
+                <img src="images/preview-bookmark.jpg" alt="" />
+                <a
+                  href="/bookmark/index.html"
+                  class="absolute w-full h-full bg-bgDark bottom-0 left-0 inline-flex items-center gap-2 transition-opacity group-hover:opacity-70 opacity-20"
+                >
+                </a>
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity group-hover:opacity-100 opacity-0"
+                >
+                  <a
+                    href="/bookmark/index.html"
+                    class="inline-flex items-center space-x-2 border-b-4 md:border-b-2 border-white"
+                  >
+                    <span class="text-white uppercase font-medium text-xl"
+                      >Live Demo</span
+                    >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="mt-0.5 h-6 w-6 stroke-white hidden"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Name and Tags -->
+              <div class="flex flex-col gap-1">
+                <h3 class="text-white text-lg font-normal">Bookmark</h3>
+                <div class="flex gap-4">
+                  <span class="uppercase text-sm">Html</span>
+                  <span class="uppercase text-sm">Css</span>
+                  <span class="uppercase text-sm">JavaScript</span>
+                  <span class="uppercase text-sm">Tailwind</span>
+                </div>
+              </div>
+            </div>
+            <!-- Fylo -->
+            <div class="w-full flex flex-col gap-2">
+              <!-- Image -->
+              <div class="group relative">
+                <img src="images/preview-fylo.jpg" alt="" />
+                <a
+                  href="/fylo/index.html"
+                  class="absolute w-full h-full bg-bgDark bottom-0 left-0 inline-flex items-center gap-2 transition-opacity group-hover:opacity-70 opacity-20"
+                >
+                </a>
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity group-hover:opacity-100 opacity-0"
+                >
+                  <a
+                    href="/fylo/index.html"
+                    class="inline-flex items-center space-x-2 border-b-4 md:border-b-2 border-white"
+                  >
+                    <span class="text-white uppercase font-medium text-xl"
+                      >Live Demo</span
+                    >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="mt-0.5 h-6 w-6 stroke-white hidden"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Name and Tags -->
+              <div class="flex flex-col gap-1">
+                <h3 class="text-white text-lg font-normal">Fylo</h3>
+                <div class="flex gap-4">
+                  <span class="uppercase text-sm">Html</span>
+                  <span class="uppercase text-sm">Css</span>
+                  <span class="uppercase text-sm">Tailwind</span>
+                  <span class="uppercase text-sm">Darkmode</span>
+                </div>
+              </div>
+            </div>
+            <!-- Minimalist Portfolio -->
+            <div class="w-full flex flex-col gap-2">
+              <!-- Image -->
+              <div class="group relative">
+                <img src="images/preview-minimal-portfolio.jpg" alt="" />
+                <a
+                  href="/minimal-portfolio/index.html"
+                  class="absolute w-full h-full bg-bgDark bottom-0 left-0 inline-flex items-center gap-2 transition-opacity group-hover:opacity-70 opacity-20"
+                >
+                </a>
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity group-hover:opacity-100 opacity-0"
+                >
+                  <a
+                    href="/minimal-portfolio/index.html"
+                    class="inline-flex items-center space-x-2 border-b-2 border-white"
+                  >
+                    <span class="text-white uppercase font-medium text-xl"
+                      >Live Demo</span
+                    >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="mt-0.5 h-6 w-6 stroke-white hidden"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Name and Tags -->
+              <div class="flex flex-col gap-1">
+                <h3 class="text-white text-lg font-normal">
+                  Minimalistisches Portfolio
+                </h3>
+                <div class="flex gap-4">
+                  <span class="uppercase text-sm">Html</span>
+                  <span class="uppercase text-sm">Sass</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-16">
+      <div class="max-w-2xl mx-auto py-6 px-8">
+        <div class="flex justify-between">
+          <span class="text-grayCopyright">&#169; Sergio Laubner</span>
+          <div class="flex flex-row gap-4">
+            <!-- Instagram -->
+            <div>
+              <a href="https://www.instagram.com/sergio_lbn/" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  class="fill-grayishBlue hover:fill-[url(#a)]"
+                >
+                  <defs>
+                    <linearGradient id="a" x1="0%" x2="50%" y1="100%" y2="0%">
+                      <stop offset="0%" stop-color="#FFC593" />
+                      <stop offset="51.945%" stop-color="#BC7198" />
+                      <stop offset="100%" stop-color="#5A77FF" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    fill=""
+                    d="M143.32 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802c-2.716 0-3.056.012-4.123.06-3.631.167-5.65 2.182-5.816 5.817-.05 1.067-.061 1.407-.061 4.123s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122c-.163-3.629-2.18-5.65-5.816-5.817C146.377.01 146.036 0 143.32 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"
+                    transform="translate(-133)"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- Twitter -->
+            <a href="#" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="20"
+                class="fill-grayishBlue hover:fill-[url(#b)]"
+              >
+                <defs>
+                  <linearGradient
+                    id="b"
+                    x1="100%"
+                    x2="0%"
+                    y1="16.979%"
+                    y2="83.021%"
+                  >
+                    <stop offset="0%" stop-color="#65FFEB" />
+                    <stop offset="100%" stop-color="#27718A" />
+                  </linearGradient>
+                </defs>
+                <path
+                  fill=""
+                  d="M86.66 3.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.805-2.27 8.22 8.22 0 01-2.606.996 4.096 4.096 0 00-2.995-1.296c-2.65 0-4.596 2.472-3.998 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478 4.086 4.086 0 01-1.858-.513c-.045 1.901 1.318 3.68 3.291 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.833 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"
+                  transform="translate(-66 -1)"
+                />
+              </svg>
+            </a>
+            <!-- Github -->
+            <a href="https://github.com/Sucuk93" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="20"
+                viewBox="0 0 24 24"
+                class="fill-grayishBlue hover:fill-[url(#c)]"
+              >
+                <defs>
+                  <linearGradient id="c" x1="0%" x2="100%" y1="100%" y2="0%">
+                    <stop offset="0%" stop-color="#D3205A" />
+                    <stop offset="100%" stop-color="#FF5A5A" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

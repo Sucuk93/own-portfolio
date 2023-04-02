@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-bgDark text-grayishBlue;
+  }
+}
+
+@layer components {
+  /* HAMBURGER MENU */
+
+  .hamburger {
+    cursor: pointer;
+    width: 24px;
+
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+  }
+
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #adb5bd;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+
+  .hamburger-bottom {
+    transform: translateY(14px);
+    background: #adb5bd;
+  }
+
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+    position: fixed;
+    top: 50px;
+    right: 25px;
+  }
+
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+    background-color: #adb5bd;
+  }
+
+  .open .hamburger-middle {
+    display: none;
+  }
+
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    background-color: #adb5bd;
+  }
+}
+
+/* rubik-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v26-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/rubik-v26-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v26-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/rubik-v26-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v26-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/rubik-v26-latin-regular.svg#Rubik")
+      format("svg"); /* Legacy iOS */
+}
+/* rubik-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v26-latin-500.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/rubik-v26-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v26-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/rubik-v26-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v26-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/rubik-v26-latin-500.svg#Rubik")
+      format("svg"); /* Legacy iOS */
+}
+/* rubik-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/rubik-v26-latin-600.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/rubik-v26-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v26-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/rubik-v26-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v26-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/rubik-v26-latin-600.svg#Rubik")
+      format("svg"); /* Legacy iOS */
+}
+/* rubik-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik-v26-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/rubik-v26-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v26-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/rubik-v26-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v26-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/rubik-v26-latin-700.svg#Rubik")
+      format("svg"); /* Legacy iOS */
+}
